@@ -1,0 +1,3 @@
+GeoIP.conf
+*.mmdb
+*.mmdb.gz
