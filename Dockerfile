@@ -1,7 +1,7 @@
 FROM alpine
 MAINTAINER Steve Jiang <steve.jiang@gmail.com>
 
-ENV VERSION=2.2.2
+ENV VERSION=2.3.1
 VOLUME /geodata
 COPY update.sh /usr/local/bin/update.sh
 ENTRYPOINT ["update.sh"]
@@ -24,3 +24,4 @@ RUN apk add -q --update \
     && cd .. \
     && rm -rf ./geoipupdate-${VERSION} \
     && rm -rf /var/cache/apk/*
+
